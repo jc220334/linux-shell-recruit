@@ -6,9 +6,9 @@
 destination=$1
 shift
 
-mkdir -p $destination
+mkdir -p "$destination"
 
-for file in $@
+for file in "$@"
 do
-    cp $file $destination/
+    cp "$file" "$destination"/
 done
